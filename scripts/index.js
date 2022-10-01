@@ -51,14 +51,15 @@ const getCurrentStory = () => {
 
 const simulateChat = (event) => {
     const video = document.querySelector('#player');
+
     if (video.currentTime > latestSeen) {
         if (video.currentTime > latestSeen + 10) { //every ten seconds it calculates. (also every ten seconds the video prompts you to rewind)
             lookForNextEvent(video.currentTime)
+            latestSeen = video.currentTime;
         }
     } else {
         reconcillePast(video.currentTime);
     }
-    latestSeen = video.currentTime;
 }
 
 //time is moving forwards. 
@@ -74,7 +75,7 @@ const lookForNextEvent = (time) => {
 
 //time is wrong
 const reconcillePast = (time) => {
-
+    timesLooped ++;
 }
 
 

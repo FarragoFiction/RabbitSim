@@ -55,7 +55,7 @@ class ChatItem{
        const name = createElementWithParentAndClass("div",header, "name");
        name.innerHTML = this.name;
        const timestamp = createElementWithParentAndClass("div",header, "timestamp");
-       timestamp.innerHTML = `${new Date().toTimeString()}`;
+       timestamp.innerHTML = `${new Date().toLocaleTimeString()}`;
 
        const content = createElementWithParentAndClass("div",container, "chat-content");
        for (let line of this.lines){
@@ -76,7 +76,7 @@ class Rando1 extends ChatItem{
 
 class Rando2 extends ChatItem{
     constructor( targetTimecode, lines){
-        super("Rando2", "http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theshot.pngg", targetTimecode, lines);
+        super("Rando2", "http://farragofiction.com/TwoGayJokes/Stories/MurderGameIcons/theshot.png", targetTimecode, lines);
     }
 }
 
