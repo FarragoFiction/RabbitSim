@@ -55,7 +55,7 @@ class ChatItem{
        const name = createElementWithParentAndClass("div",header, "name");
        name.innerHTML = this.name;
        const timestamp = createElementWithParentAndClass("div",header, "timestamp");
-       timestamp.innerHTML = `${new Date().toLocaleTimeString()}`;
+       timestamp.innerHTML = ` ${new Date().toLocaleTimeString()}`;
 
        const content = createElementWithParentAndClass("div",container, "chat-content");
        for (let line of this.lines){

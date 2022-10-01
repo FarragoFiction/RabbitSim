@@ -30,8 +30,13 @@ if you rewind, the chat rewinds as well. they notice. you've caught them in a lo
 
 const stories = [
     [
-        new Rando1(5, [new ChatLine(0, "first guy says something at time code 5"), new ChatLine(10, "testing ten seconds later, this might overlap, not sure how to handle")]),
-        new Rando2(15, [new ChatLine(0, "second guy speaks up after 10 seconds"), new ChatLine(10, "testing ten seconds later")]),
+        new Rando1(0, [new ChatLine(0, "first guy says something almost immediately"), new ChatLine(1, "testing 1 seconds later, this might overlap, not sure how to handle")]),
+        new Rando1(5, [new ChatLine(0, "first guy says something at time code 5"), new ChatLine(1, "testing 1 seconds later, this might overlap, not sure how to handle")]),
+        new Rando2(15, [new ChatLine(0, "second guy speaks up after 10 seconds"), new ChatLine(1, "testing 1 seconds later")]),
+        new Rando1(17, [new ChatLine(0, "first guy responds almost immediately"), new ChatLine(10, "testing ten seconds later")]),
+        new Rando2(20, [new ChatLine(0, "second guy responds quickly too"), new ChatLine(1, "testing 1 seconds later")]),
+        new Rando1(65, [new ChatLine(0, "first guy is quiet for a while, then says something"), new ChatLine(10, "testing ten seconds later")]),
+
     ],
     [
         new Rando1(5, [new ChatLine(0, "wait, isn't this different?")]),
@@ -40,11 +45,11 @@ const stories = [
 ]
 
 //each time you loop, tell a different story.
-let timesLooped = 1;
+let timesLooped = 0;
 let chatBox;
 
 let latestSeen = 0; //if the videos current time code is LESS than this, i need to throw away the whole chat and render up till what i've seen
-let latestInteracted = 0;
+let latestInteracted = -10;
 
 const getCurrentStory = () => {
     console.log("JR NOTE: stories is", stories.length, "and times looped is ", timesLooped, "so i think thats index ",timesLooped %stories.length, "or is it",  )
@@ -71,9 +76,13 @@ const simulateChat = (event) => {
 
 //time is moving forwards. 
 const lookForNextEvent = (time) => {
+    console.log("JR NOTE: time i am looking for the next event against is", time);
     const story = getCurrentStory();
     for(let line of story){
-        if(line.targetTimecode > latestSeen && line.targetTimecode > time){
+        console.log("JR NOTE: line is", line.targetTimecode, "is that bigger than the latestInteracted? ",latestInteracted,line.targetTimecode > latestInteracted, " is it bigger than the time? ",time,latestInteracted && time > line.targetTimecode );
+
+        if(line.targetTimecode > latestInteracted && time > line.targetTimecode ){
+            console.log("JR NOTE: yes, so i am going to render")
             line.renderSelf(chatBox)
         }
     }
