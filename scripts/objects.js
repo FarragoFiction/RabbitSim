@@ -8,10 +8,12 @@ class ChatLine{
         this.content = content;
     }
 
-    //TODO only render self after x seconds have gone by since you were asked
     renderSelf = (target)=>{
-        const p = createElementWithParentAndClass("p",target);
-        p.innerHTML = this.content;
+        setTimeout(()=>{
+            const p = createElementWithParentAndClass("p",target);
+            p.innerHTML = this.content;
+        }, this.offset*1000)
+
     }
 
 

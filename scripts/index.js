@@ -76,13 +76,13 @@ const simulateChat = (event) => {
 
 //time is moving forwards. 
 const lookForNextEvent = (time) => {
-    console.log("JR NOTE: time i am looking for the next event against is", time);
+    //console.log("JR NOTE: time i am looking for the next event against is", time);
     const story = getCurrentStory();
     for(let line of story){
-        console.log("JR NOTE: line is", line.targetTimecode, "is that bigger than the latestInteracted? ",latestInteracted,line.targetTimecode > latestInteracted, " is it bigger than the time? ",time,latestInteracted && time > line.targetTimecode );
+        //console.log("JR NOTE: line is", line.targetTimecode, "is that bigger than the latestInteracted? ",latestInteracted,line.targetTimecode > latestInteracted, " is it bigger than the time? ",time,latestInteracted && time > line.targetTimecode );
 
         if(line.targetTimecode > latestInteracted && time > line.targetTimecode ){
-            console.log("JR NOTE: yes, so i am going to render")
+            //console.log("JR NOTE: yes, so i am going to render")
             line.renderSelf(chatBox)
         }
     }
