@@ -36,30 +36,37 @@ const stories = [
     [
         new Rando1(5, [new ChatLine(0, "wait, isn't this different?")]),
         new Rando2(15, [new ChatLine(0, "no i think it was always like this")]),
-    ],
+    ]
 ]
 
 //each time you loop, tell a different story.
-let timesLooped = 0;
+let timesLooped = 1;
 let chatBox;
 
 let latestSeen = 0; //if the videos current time code is LESS than this, i need to throw away the whole chat and render up till what i've seen
+let latestInteracted = 0;
 
 const getCurrentStory = () => {
-    return stories[timesLooped % stories.length]; //no matter how many times we've looped theres alwyas something
+    console.log("JR NOTE: stories is", stories.length, "and times looped is ", timesLooped, "so i think thats index ",timesLooped %stories.length, "or is it",  )
+    return stories[ timesLooped %stories.length]; //no matter how many times we've looped theres alwyas something
 }
 
 const simulateChat = (event) => {
     const video = document.querySelector('#player');
 
     if (video.currentTime > latestSeen) {
-        if (video.currentTime > latestSeen + 10) { //every ten seconds it calculates. (also every ten seconds the video prompts you to rewind)
+        if (video.currentTime > latestInteracted + 10) { //every ten seconds it calculates. (also every ten seconds the video prompts you to rewind)
             lookForNextEvent(video.currentTime)
-            latestSeen = video.currentTime;
+            latestInteracted = video.currentTime;
+
         }
     } else {
         reconcillePast(video.currentTime);
+        latestInteracted = video.currentTime;
+
     }
+    latestSeen = video.currentTime;
+
 }
 
 //time is moving forwards. 
@@ -76,6 +83,13 @@ const lookForNextEvent = (time) => {
 //time is wrong
 const reconcillePast = (time) => {
     timesLooped ++;
+    chatBox.innerHTML = "";
+    const story = getCurrentStory();
+    for(let line of story){
+        if(line.targetTimecode > time){ //we no longer care that we're only rendering things that are in the future
+            line.renderSelf(chatBox)
+        }
+    }
 }
 
 
