@@ -8,6 +8,7 @@ body {
   background-color: black;
   color: #c4c4c4;
   font-family: nunito;
+  margin: 0px;
 }
 
 #container{
@@ -62,9 +63,16 @@ body {
 }
 
 #chat-box{
-  margin-top: 100px;
+  margin-top: 20px;
   margin-left: 10px;
   color: white;
+}
+-webkit-scrollbar { width: 0 !important }
+
+#chat-box{
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+  -ms-overflow-style: none; 
 }
 
 p{
