@@ -65,7 +65,7 @@ class ChatItem {
         name.innerHTML = this.name;
         const timestamp = createElementWithParentAndClass("div", header, "timestamp");
         timestamp.innerHTML = ` ${new Date().toLocaleTimeString()}`;
-
+        target.scrollTop = target.scrollHeight;
         const content = createElementWithParentAndClass("div", container, "chat-content");
         for (let line of this.lines) {
             line.renderSelf(content, timecode >this.targetTimecode + 10); //if i was supposed to render more than ten seconds ago, no async behavior plz (useful for fastforward and)
@@ -74,6 +74,34 @@ class ChatItem {
     }
 
 
+}
+
+class iWantToBelieve extends ChatItem {
+    isMe = true;
+    constructor(targetTimecode, lines) {
+        super("iWantToBelieve", "icons/ufo.PNG", targetTimecode, lines);
+    }
+}
+
+class uMad extends ChatItem {
+    isMe = true;
+    constructor(targetTimecode, lines) {
+        super("uMad", "icons/umad.PNG", targetTimecode, lines);
+    }
+}
+
+class hatsuneMikuFan1997 extends ChatItem {
+    isMe = true;
+    constructor(targetTimecode, lines) {
+        super("mikuFan1997", "icons/miku.PNG", targetTimecode, lines);
+    }
+}
+
+class asinineAssasin extends ChatItem {
+    isMe = true;
+    constructor(targetTimecode, lines) {
+        super("asinineAssasin", "icons/ass.PNG", targetTimecode, lines);
+    }
 }
 
 class Rando1 extends ChatItem {

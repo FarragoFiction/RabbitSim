@@ -28,22 +28,6 @@ if you rewind, the chat rewinds as well. they notice. you've caught them in a lo
 */
 //yes yes, i'm bad for using global variables, so sue me, i'm going fast
 
-const stories = [
-    {video_src: "Films/LudumDareNorth.mp4",chat: [
-        new Rando1(0, [new ChatLine(0, "first guy says something almost immediately"), new ChatLine(1, "testing 1 seconds later, this might overlap, not sure how to handle")]),
-        new Rando1(5, [new ChatLine(0, "first guy says something at time code 5"), new ChatLine(1, "testing 1 seconds later, this might overlap, not sure how to handle")]),
-        new Rando2(15, [new ChatLine(0, "second guy speaks up after 10 seconds"), new ChatLine(1, "testing 1 seconds later")]),
-        new Rando1(17, [new ChatLine(0, "first guy responds almost immediately"), new ChatLine(10, "testing ten seconds later")]),
-        new Rando2(20, [new ChatLine(0, "second guy responds quickly too"), new ChatLine(1, "testing 1 seconds later")]),
-        new Rando1(65, [new ChatLine(0, "first guy is quiet for a while, then says something"), new ChatLine(10, "testing ten seconds later")]),
-
-    ]},
-    {video_src: "http://farragofiction.com/ZampanioHotlink/Films/thirdEast.mp4",chat:[
-        new Rando1(5, [new ChatLine(0, "wait, isn't this different?")]),
-        new Rando2(15, [new ChatLine(0, "no i think it was always like this")]),
-    ]}
-]
-
 //each time you loop, tell a different story.
 let timesLooped = 0;
 let chatBox;
@@ -61,7 +45,7 @@ const simulateChat = (event) => {
      video = document.querySelector('#player');
 
     if (video.currentTime >= latestSeen) {
-        if (video.currentTime > latestInteracted + 10) { //every ten seconds it calculates. (also every ten seconds the video prompts you to rewind)
+        if (video.currentTime > latestInteracted + 1) { //every 1 seconds it calculates. (also every ten seconds the video prompts you to rewind)
             lookForNextEvent(video.currentTime)
             latestInteracted = video.currentTime;
 
