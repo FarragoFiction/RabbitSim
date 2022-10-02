@@ -29,7 +29,7 @@ if you rewind, the chat rewinds as well. they notice. you've caught them in a lo
 //yes yes, i'm bad for using global variables, so sue me, i'm going fast
 
 const stories = [
-    {video_src: "http://farragofiction.com/ZampanioHotlink/Films/shittyNorth.mp4",chat: [
+    {video_src: "Films/LudumDareNorth.mp4",chat: [
         new Rando1(0, [new ChatLine(0, "first guy says something almost immediately"), new ChatLine(1, "testing 1 seconds later, this might overlap, not sure how to handle")]),
         new Rando1(5, [new ChatLine(0, "first guy says something at time code 5"), new ChatLine(1, "testing 1 seconds later, this might overlap, not sure how to handle")]),
         new Rando2(15, [new ChatLine(0, "second guy speaks up after 10 seconds"), new ChatLine(1, "testing 1 seconds later")]),
