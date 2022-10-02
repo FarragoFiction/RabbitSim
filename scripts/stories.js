@@ -85,7 +85,7 @@ const stories = [
         new asinineAssasin(317, [new ChatLine(0, "You can kind of make out some of the words in the skill graph, I'm noting.")]),
         new hatsuneMikuFan1997(320, [new ChatLine(0, "?")]),
         new uMad(321, [new ChatLine(0, "lulz"),new ChatLine(2, "rage mode time")]),
-        new asinineAssasin(330, [new ChatLine(0, "Well. That was certainly something.")]),
+        new asinineAssasin(330, [new ChatLine(0, "Well. That was certainly something.")])
 
 
     ]},
@@ -97,7 +97,7 @@ const stories = [
         new asinineAssasin(30, [new ChatLine(0, "Could we *please* not talk about two conspiracy theories at once? I have a big enough headache as it is...        ")]),
         new hatsuneMikuFan1997(33, [new ChatLine(0, "Sorry -_-;;")]),
         new iWantToBelieve(40, [new ChatLine(0, "THANK you AA"),new ChatLine(1, "AS I WAS SAYING"),new ChatLine(4, "the original stream got taken down"),new ChatLine(10, "and we should be GRATEFUL that some rando had a screen capture archived")]),
-        new asinineAssasin(55, [new ChatLine(0, "Not to rain on your parade, but without audio...and without a good enough resolution to actually read anything... "),new ChatLine(5, "I'm not sure, exactly, what you're hoping to prove to us?")]),
+        new asinineAssasin(55, [new ChatLine(0, "At least there are subtitles.")]),
         new uMad(72, [new ChatLine(0, "uh did anyone else see that?")]),
         new hatsuneMikuFan1997(75, [new ChatLine(0, "See what?"),new ChatLine(1, " <_<"),new ChatLine(2, " >_>")]),
         new uMad(80, [new ChatLine(0, "nvm probably just a glitch or something"),new ChatLine(0, "<img width='200' src ='memes/glitch.jpg'/>")]),
@@ -127,7 +127,11 @@ const stories = [
         new asinineAssasin(300, [new ChatLine(0, "Miku, you of all peopel should know better than to give mad attention when he gets like this.")]),
         new hatsuneMikuFan1997(320, [new ChatLine(0, "Yeah... I guess. -_-")]),
         new uMad(321, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]),
-        new asinineAssasin(330, [new ChatLine(0, "Well. That was certainly something.")]),
+        new asinineAssasin(325, [new ChatLine(0, "Well. That was certainly something.")]),
+        new hatsuneMikuFan1997(330, [new ChatLine(0, "Does anyone else feel like we've done this before?")])
+        
+    ,{video_src: "http://farragofiction.com/ZampanioHotlink/Films/all_smiles_and_spaghetti.mp4",chat:[
+        new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]}
 ]
 
