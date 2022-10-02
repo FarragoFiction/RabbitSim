@@ -11,7 +11,6 @@ class ChatLine {
     //imeediate if we're jumping around in time
     renderSelf = (target, immediate) => {
         if (immediate) {
-            console.log("JR NOTE: immediate render")
             const p = createElementWithParentAndClass("p", target);
             p.innerHTML = this.content;
         } else {
@@ -41,7 +40,7 @@ class ChatItem {
         this.lines = lines;
     }
 
-    renderSelf = (target, timecode, immediate = false) => {
+    renderSelf = (target, timecode) => {
         /*
         <div class="your chat">
           <img class="circle chat-icon"
@@ -69,7 +68,7 @@ class ChatItem {
 
         const content = createElementWithParentAndClass("div", container, "chat-content");
         for (let line of this.lines) {
-            line.renderSelf(content, immediate, timecode <this.targetTimecode + 10); //if i was supposed to render more than ten seconds ago, no async behavior plz (useful for fastforward and)
+            line.renderSelf(content, timecode >this.targetTimecode + 10); //if i was supposed to render more than ten seconds ago, no async behavior plz (useful for fastforward and)
         }
 
     }
