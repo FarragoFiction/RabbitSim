@@ -135,7 +135,7 @@ const east = {video_src: "Films/East.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]};
 
-    unknown = {video_src: "Films/North.mp4",chat:[
+    unknown = {video_src: "Films/Unknown.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]};
 
@@ -143,6 +143,7 @@ const east = {video_src: "Films/East.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]};
 
+    //north is normal, east begins to crack, south we've lost mad, unknown we've lost AA, and in west Belief is alone
 const stories = [north, east, south, unknown, west];
 
 const postProcessStories = ()=>{
