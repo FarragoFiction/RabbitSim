@@ -1,6 +1,6 @@
 //TODO: make sure all assets are kept locally so when i upload it still works
 
-
+//your soul will build your body into a home.
 /*
 
 people are watching a "lets play" of zampanio. 
@@ -44,6 +44,12 @@ const stories = [
         new iWantToBelieve(10, [new ChatLine(0, "would you let me FINISH"),new ChatLine(2, "SO"),new ChatLine(4, "this is the only copy i could find of the stream")]),
         new hatsuneMikuFan1997(20, [new ChatLine(0, "Man when Parker-senpai snipes someone he really goes hard, huh?")]),
         new asinineAssasin(30, [new ChatLine(0, "Could we *please* not talk about two conspiracy theories at once? I have a big enough headache as it is...        ")]),
+        new hatsuneMikuFan1997(33, [new ChatLine(0, "Sorry -_-;;")]),
+        new iWantToBelieve(40, [new ChatLine(0, "THANK you AA"),new ChatLine(1, "AS I WAS SAYING"),new ChatLine(4, "the original stream got taken down"),new ChatLine(10, "and we should be GRATEFUL that some rando had a screen capture archived")]),
+        new asinineAssasin(55, [new ChatLine(0, "Not to rain on your parade, but without audio...and without a good enough resolution to actually read anything... "),new ChatLine(5, "I'm not sure, exactly, what you're hoping to prove to us?")]),
+        new uMad(72, [new ChatLine(0, "uh did anyone else see that?")]),
+        new hatsuneMikuFan1997(75, [new ChatLine(0, "See what?"),new ChatLine(0, " <_<"),new ChatLine(0, " >_>")]),
+        new uMad(80, [new ChatLine(0, "nvm probably just a glitch or something"),new ChatLine(0, "<img width='200' src ='memes/glitch.jpg'/>")]),
 
 
     ]},

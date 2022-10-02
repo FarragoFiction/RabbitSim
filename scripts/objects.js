@@ -9,14 +9,18 @@ class ChatLine {
     }
 
     //imeediate if we're jumping around in time
-    renderSelf = (target, immediate) => {
+    renderSelf = (target, scrollTarget, immediate) => {
         if (immediate) {
             const p = createElementWithParentAndClass("p", target);
             p.innerHTML = this.content;
+            scrollTarget.scrollTop = scrollTarget.scrollHeight;
         } else {
             setTimeout(() => {
                 const p = createElementWithParentAndClass("p", target);
                 p.innerHTML = this.content;
+                scrollTarget.scrollTop = scrollTarget.scrollHeight;
+
+
             }, this.offset * 1000)
 
         }
@@ -68,7 +72,7 @@ class ChatItem {
         target.scrollTop = target.scrollHeight;
         const content = createElementWithParentAndClass("div", container, "chat-content");
         for (let line of this.lines) {
-            line.renderSelf(content, timecode >this.targetTimecode + 10); //if i was supposed to render more than ten seconds ago, no async behavior plz (useful for fastforward and)
+            line.renderSelf(content, target, timecode >this.targetTimecode + 10); //if i was supposed to render more than ten seconds ago, no async behavior plz (useful for fastforward and)
         }
 
     }
