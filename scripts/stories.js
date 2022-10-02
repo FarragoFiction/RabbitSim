@@ -62,7 +62,14 @@ const stories = [
         new hatsuneMikuFan1997(133, [new ChatLine(0, "Scary... @_@")]),
         new uMad(134, [new ChatLine(0, "sus")]),
         new iWantToBelieve(135, [new ChatLine(0, "LIKE i said, not important"),new ChatLine(1, "what IS important"),new ChatLine(3, "is this guy claims he got a copy"),new ChatLine(4, "tho like"),new ChatLine(7, "screenshots of the comments section say he just found some kind of fan work"),new ChatLine(9, "and then the stream gets taken down"),new ChatLine(10, "and no one ever hears from him again")]),
-
+        new hatsuneMikuFan1997(147, [new ChatLine(0, "Parker senpai works fast ^_^")]),
+        new uMad(148, [new ChatLine(0, "wut")]),
+        new hatsuneMikuFan1997(153, [new ChatLine(0, "Parker-senpai! This streamer guy was REALLY mean to him and we aaaaaallll know what happens to people mean to our Precious Cinnamon Bun~!")]),
+        new iWantToBelieve(160, [new ChatLine(0, "right"),new ChatLine(1, "thats part of it"),new ChatLine(2, "theres this entire niche like"),new ChatLine(4, "community of streamers theres weird rumors about"),new ChatLine(7, "sometimes people accuse them of being associated with Zampanio"),new ChatLine(8, "or of like"),new ChatLine(10, "'disappearing' the people who find it?"),new ChatLine(11, "POINT is"),new ChatLine(13, "cuz the guy used his real name"),new ChatLine(15, "after a while of him being afk"),new ChatLine(18, "someone found a newspaper article in their home town about this dude"),new ChatLine(19, "same name"),new ChatLine(21, "who was found with a gunshot wound in his shoulder"),new ChatLine(23, "completely non-responsive"),new ChatLine(25, "with the most terrified look on his face"),new ChatLine(27, "apparently the only thing he says anymore is"),new ChatLine(30, "'zampanio is a really fun game. you should play it'")]),
+        new uMad(195, [new ChatLine(0, "there it is again!")]),
+        new iWantToBelieve(196, [new ChatLine(0, "mad!"),new ChatLine(1, "can you pay ATTENTION"),new ChatLine(1, "i'm trying to education you heathens")]),
+        new asinineAssasin(198, [new ChatLine(0, "No, as much as it pains me to admit it, he's right."),new ChatLine(1, "I saw it too.")]),
+        new hatsuneMikuFan1997(201, [new ChatLine(0, "Is that it!?"),new ChatLine(0, "I think I see it too")]),
 
     ]},
     {video_src: "Films/LudumDareNorth.mp4",chat: [
@@ -79,3 +86,13 @@ const stories = [
         new Rando2(15, [new ChatLine(0, "no i think it was always like this")]),
     ]}
 ]
+
+
+/*
+        new iWantToBelieve(0, [new ChatLine(0, "test")]),
+        new uMad(0, [new ChatLine(0, "test")]),
+        new hatsuneMikuFan1997(0, [new ChatLine(0, "test")]),
+        new asinineAssasin(0, [new ChatLine(0, "test")]),
+,new ChatLine(0, "test")
+
+*/
