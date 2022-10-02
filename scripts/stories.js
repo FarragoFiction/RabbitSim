@@ -131,7 +131,7 @@ const east = {video_src: "Films/East.mp4",chat:[
         new hatsuneMikuFan1997(330, [new ChatLine(0, "Does anyone else feel like we've done this before?")])
 ]}
         
-    south = {video_src: "Films/North.mp4",chat:[
+    south = {video_src: "Films/South.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]};
 
