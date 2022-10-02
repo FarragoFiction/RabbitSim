@@ -1,4 +1,5 @@
 
+const beep = new Audio(src="audio/beep.mp3");
 
 class ChatLine {
     content = "";
@@ -14,11 +15,13 @@ class ChatLine {
             const p = createElementWithParentAndClass("p", target);
             p.innerHTML = this.content;
             scrollTarget.scrollTop = scrollTarget.scrollHeight;
+            beep.play();
         } else {
             setTimeout(() => {
                 const p = createElementWithParentAndClass("p", target);
                 p.innerHTML = this.content;
                 scrollTarget.scrollTop = scrollTarget.scrollHeight +50;
+                beep.play();
 
 
             }, this.offset * 1000)
