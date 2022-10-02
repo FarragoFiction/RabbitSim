@@ -66,9 +66,9 @@ const stories = [
         new uMad(148, [new ChatLine(0, "wut")]),
         new hatsuneMikuFan1997(153, [new ChatLine(0, "Parker-senpai! This streamer guy was REALLY mean to him and we aaaaaallll know what happens to people mean to our Precious Cinnamon Bun~!")]),
         new iWantToBelieve(160, [new ChatLine(0, "right"),new ChatLine(1, "thats part of it"),new ChatLine(2, "theres this entire niche like"),new ChatLine(4, "community of streamers theres weird rumors about"),new ChatLine(7, "sometimes people accuse them of being associated with Zampanio"),new ChatLine(8, "or of like"),new ChatLine(10, "'disappearing' the people who find it?"),new ChatLine(11, "POINT is"),new ChatLine(13, "cuz the guy used his real name"),new ChatLine(15, "after a while of him being afk"),new ChatLine(18, "someone found a newspaper article in their home town about this dude"),new ChatLine(19, "same name"),new ChatLine(21, "who was found with a gunshot wound in his shoulder"),new ChatLine(23, "completely non-responsive"),new ChatLine(25, "with the most terrified look on his face"),new ChatLine(27, "apparently the only thing he says anymore is"),new ChatLine(30, "'zampanio is a really fun game. you should play it'")]),
-        new uMad(195, [new ChatLine(0, "there it is again!")]),
-        new iWantToBelieve(196, [new ChatLine(0, "mad!"),new ChatLine(1, "can you pay ATTENTION"),new ChatLine(1, "i'm trying to education you heathens")]),
-        new asinineAssasin(198, [new ChatLine(0, "No, as much as it pains me to admit it, he's right."),new ChatLine(1, "I saw it too.")]),
+        new uMad(190, [new ChatLine(0, "there it is again!")]),
+        new iWantToBelieve(191, [new ChatLine(0, "mad!"),new ChatLine(1, "can you pay ATTENTION"),new ChatLine(1, "i'm trying to education you heathens")]),
+        new asinineAssasin(194, [new ChatLine(0, "No, as much as it pains me to admit it, he's right."),new ChatLine(1, "I saw it too.")]),
         new hatsuneMikuFan1997(201, [new ChatLine(0, "Is that it!?"),new ChatLine(0, "I think I see it too")]),
 
     ]},
