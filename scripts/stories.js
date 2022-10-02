@@ -89,7 +89,7 @@ const north = {video_src: "Films/North.mp4",chat: [
 
 ]};
 
-const east = {video_src: "http://farragofiction.com/ZampanioHotlink/Films/thirdEast.mp4",chat:[
+const east = {video_src: "Films/East.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")]),
         new uMad(3, [new ChatLine(0, "omg how is teh quality this shitty"),new ChatLine(2, "what even is this audio lulz")]),
         new iWantToBelieve(10, [new ChatLine(0, "would you let me FINISH"),new ChatLine(2, "SO"),new ChatLine(4, "this is the only copy i could find of the stream")]),
@@ -111,7 +111,7 @@ const east = {video_src: "http://farragofiction.com/ZampanioHotlink/Films/thirdE
         new iWantToBelieve(160, [new ChatLine(0, "right"),new ChatLine(1, "thats part of it"),new ChatLine(2, "they say that Parker guy kills anyone who finds Zampanio"),new ChatLine(4, "kills or worse"),new ChatLine(7, "or maybe that person or whatever who is always behind him???"),new ChatLine(8, "POINT is"),new ChatLine(10, "yeah"),new ChatLine(11, "miku's right"),new ChatLine(13, "they're saying Parker got this streamer guy"),new ChatLine(15, "all because he uploaded this video"),new ChatLine(18, "someone found a newspaper article in their home town about this dude"),new ChatLine(19, "same name"),new ChatLine(21, "who was found with a gunshot wound in his shoulder"),new ChatLine(23, "completely non-responsive"),new ChatLine(25, "with the most terrified look on his face"),new ChatLine(27, "apparently the only thing he says anymore is"),new ChatLine(30, "'zampanio is a really fun game. you should play it'")]),
         new uMad(190, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]),
         new iWantToBelieve(191, [new ChatLine(0, "mad!"),new ChatLine(1, "can you take things seriously for ONCE?"),new ChatLine(1, "i'm trying to education you heathens")]),
-        new asinineAssasin(194, [new ChatLine(0, "Actually, if I may interupt?"),new ChatLine(1, "I think I saw that think mad was talking about.")]),
+        new asinineAssasin(194, [new ChatLine(0, "Actually, if I may interupt?"),new ChatLine(1, "I think I saw that thing mad was talking about.")]),
         new hatsuneMikuFan1997(201, [new ChatLine(0, "Is that it!?"),new ChatLine(1, "I think I see it too")]),
         new iWantToBelieve(202, [new ChatLine(0, ";alskjdfa;sjf"),new ChatLine(1, "its over the stream ui too"),new ChatLine(1, "does this mean this copy was messed with"),new ChatLine(2, "to try to make it 'spookier'"),new ChatLine(4, "see THIS is what makes it so hard being an internet historian"),new ChatLine(5, "people"),new ChatLine(6, "PEOPLE"),new ChatLine(7, "should know better than to edit historical records!")]),
         new asinineAssasin(210, [new ChatLine(0, "So, to summarize."),new ChatLine(2, "You brought us here to 'prove' a fundamentally ridiculous claim. "),new ChatLine(5, "And instead got us to watch a phenomenally boring amateur video fully illustrating how absolutely untrue all this 'Zampanio' b.s. is.")]),
