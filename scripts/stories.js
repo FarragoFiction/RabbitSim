@@ -33,7 +33,7 @@ if you rewind, the chat rewinds as well. they notice. you've caught them in a lo
         new uMad(0, [new ChatLine(0, "test")]),
         new hatsuneMikuFan1997(0, [new ChatLine(0, "test")]),
         new asinineAssasin(0, [new ChatLine(0, "test")]),
-
+,new ChatLine(0, "test")
 
 */
 
@@ -48,8 +48,20 @@ const stories = [
         new iWantToBelieve(40, [new ChatLine(0, "THANK you AA"),new ChatLine(1, "AS I WAS SAYING"),new ChatLine(4, "the original stream got taken down"),new ChatLine(10, "and we should be GRATEFUL that some rando had a screen capture archived")]),
         new asinineAssasin(55, [new ChatLine(0, "Not to rain on your parade, but without audio...and without a good enough resolution to actually read anything... "),new ChatLine(5, "I'm not sure, exactly, what you're hoping to prove to us?")]),
         new uMad(72, [new ChatLine(0, "uh did anyone else see that?")]),
-        new hatsuneMikuFan1997(75, [new ChatLine(0, "See what?"),new ChatLine(0, " <_<"),new ChatLine(0, " >_>")]),
+        new hatsuneMikuFan1997(75, [new ChatLine(0, "See what?"),new ChatLine(1, " <_<"),new ChatLine(2, " >_>")]),
         new uMad(80, [new ChatLine(0, "nvm probably just a glitch or something"),new ChatLine(0, "<img width='200' src ='memes/glitch.jpg'/>")]),
+        new iWantToBelieve(85, [new ChatLine(0, "look, i dunno what to tell yall"),new ChatLine(2, "this is what we have"),new ChatLine(3, "maybe it clears up later on"),new ChatLine(5, "IN ANY CASE"),new ChatLine(6, "miku"),new ChatLine(10, "you were saying in the server you had never heard about this creepy pasta?")]),
+        new hatsuneMikuFan1997(96, [new ChatLine(0, "Nope!")]),
+        new asinineAssasin(97, [new ChatLine(0, "Here we go, again.")]),
+        new iWantToBelieve(100, [new ChatLine(0, "SO"),new ChatLine(2, "theres this game"),new ChatLine(3, "Zampanio"),new ChatLine(4, "that PROBABLY doesn't exist"),new ChatLine(6, "lots of impossible stuff is claimed about it")]),
+        new hatsuneMikuFan1997(108, [new ChatLine(0, "Like what?")]),
+        new iWantToBelieve(113, [new ChatLine(0, "doesn't matter",new ChatLine(2, "whats IMPORTANT is"))]),
+        new asinineAssasin(117, [new ChatLine(0, "Oh, no, no, no.",new ChatLine(2, "You tell her about your precious 'rumors'."))]),
+        new iWantToBelieve(120, [new ChatLine(0, "a;ksjdf;ajkdf"),new ChatLine(2, "will you all just let me SPEAK?"),new ChatLine(3, "fiiiine"),new ChatLine(4, "weird stuff like it predates PONG"),new ChatLine(8, "and if you try to talk about it either you vanish, or what you said does")]),
+        new asinineAssasin(130, [new ChatLine(0, "As you see, strictly credible rumors.")]),
+        new hatsuneMikuFan1997(133, [new ChatLine(0, "Scary... @_@")]),
+        new uMad(134, [new ChatLine(0, "sus")]),
+        new iWantToBelieve(135, [new ChatLine(0, "LIKE i said, not important"),new ChatLine(1, "what IS important"),new ChatLine(3, "is this guy claims he got a copy"),new ChatLine(4, "tho like"),new ChatLine(7, "screenshots of the comments section say he just found some kind of fan work"),new ChatLine(9, "and then the stream gets taken down"),new ChatLine(10, "and no one ever hears from him again")]),
 
 
     ]},
