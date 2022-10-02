@@ -18,7 +18,7 @@ class ChatLine {
             setTimeout(() => {
                 const p = createElementWithParentAndClass("p", target);
                 p.innerHTML = this.content;
-                scrollTarget.scrollTop = scrollTarget.scrollHeight;
+                scrollTarget.scrollTop = scrollTarget.scrollHeight +50;
 
 
             }, this.offset * 1000)
@@ -69,7 +69,7 @@ class ChatItem {
         name.innerHTML = this.name;
         const timestamp = createElementWithParentAndClass("div", header, "timestamp");
         timestamp.innerHTML = ` ${new Date().toLocaleTimeString()}`;
-        target.scrollTop = target.scrollHeight;
+        target.scrollTop = target.scrollHeight + 50;
         const content = createElementWithParentAndClass("div", container, "chat-content");
         for (let line of this.lines) {
             line.renderSelf(content, target, timecode >this.targetTimecode + 10); //if i was supposed to render more than ten seconds ago, no async behavior plz (useful for fastforward and)
