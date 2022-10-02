@@ -60,6 +60,7 @@ const simulateChat = (event) => {
 
 }
 
+
 //time is moving forwards. 
 const lookForNextEvent = (time) => {
     //console.log("JR NOTE: time i am looking for the next event against is", time);
@@ -77,18 +78,20 @@ const lookForNextEvent = (time) => {
 
 //time is wrong
 const reconcillePast = (time) => {
-    console.log("JR NOTE: reconcilling the past");
+    console.log("JR NOTE: reconcilling the past, loop was", timesLooped);
     timesLooped ++;
+    console.log("JR NOTE: reconcilling the past, loop becomes", timesLooped);
+
     const story = getCurrentStory();
 
     const timeSave = video.currentTime;
+    latestInteracted = timeSave;
+    latestSeen = timeSave;
     video.src = story.video_src;
     video.currentTime = timeSave;
     chatBox.innerHTML = "";
     for(let line of story.chat){
-        console.log("JR NOTE: current story is", story, "should i render bits of it?")
         if(line.targetTimecode < time){ //we no longer care that we're only rendering things that are in the future
-            console.log("JR NOTE: rendering ",line)
             line.renderSelf(chatBox,time)
         }
     }
@@ -106,5 +109,6 @@ const startSimulation = () => {
 
 
 window.onload = () => {
+    postProcessStories();
     startSimulation();
 }

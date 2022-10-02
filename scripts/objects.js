@@ -15,7 +15,7 @@ class ChatLine {
             const p = createElementWithParentAndClass("p", target);
             p.innerHTML = this.content;
             scrollTarget.scrollTop = scrollTarget.scrollHeight;
-            beep.play();
+            //beep.play();
         } else {
             setTimeout(() => {
                 const p = createElementWithParentAndClass("p", target);
