@@ -139,14 +139,33 @@ const east = {video_src: "Films/East.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]};
 
-    west = {video_src: "Films/North.mp4",chat:[
+    west = {video_src: "Films/West.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
     ]};
 
+   /* fake = {video_src: "Films/AllYourFriendsAreHappyWithoutYou.mp4",chat:[
+        
+    ]};*/
+
+    //have I mentioned lately that this is a Lonely game? they all use Belief's writing style
+    //const friendlyPhrases = ["i don't know what I would do without friends like you!","friendship is more powerful than any force in the entire Universe!","i'm so glad we watch movies together every day, as friends!","this media sure is entertaining!","what a great video!","isn't it so great to be friends?","i'm so glad we're friends!","the THREE of us will be friends forever!","friends!","besties forever!","i sure am glad we are living without Belief!"]
+
+
     //north is normal, east begins to crack, south we've lost mad, unknown we've lost AA, and in west Belief is alone
 const stories = [north, east, south, unknown, west];
+//const stories = [fake];
+
+
 
 const postProcessStories = ()=>{
+
+    /*for(let i = 0; i<300; i+=10){
+        fake.chat.push(new uMad(i, [new ChatLine(0, pickFrom(friendlyPhrases))]))
+
+        fake.chat.push(new asinineAssasin(i, [new ChatLine(0, pickFrom(friendlyPhrases))]))
+
+        fake.chat.push(new hatsuneMikuFan1997(i, [new ChatLine(0, pickFrom(friendlyPhrases))]))
+    }*/
     for(let i = 0; i<300; i+=10){
         console.log("JR NOTE: i is",i, "and stories[2 is", stories[2])
         stories[2].chat.push(new uMad(i, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]))
