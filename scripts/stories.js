@@ -130,10 +130,23 @@ const east = {video_src: "Films/East.mp4",chat:[
         new asinineAssasin(325, [new ChatLine(0, "Well. That was certainly something.")]),
         new hatsuneMikuFan1997(330, [new ChatLine(0, "Does anyone else feel like we've done this before?")])
 ]}
-        
+//theres clearly loops we don't see.  they reference events we never see.
     south = {video_src: "Films/South.mp4",chat:[
-        new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
+        new asinineAssasin(61, [new ChatLine(0, "Oh, look."),new ChatLine(1, "It's an actual train wreck."),new ChatLine(2, "How novel."),new ChatLine(3, "Belief, you take us to the nicest of places.")]),
+        new iWantToBelieve(63, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping video hell"),new ChatLine(6, "THEN"),new ChatLine(7, "its all"),new ChatLine(8, "'she failed to WARN us'"),new ChatLine(9, "BULLSHIT.")]),
+        new hatsuneMikuFan1997(72, [new ChatLine(0, "Guys!"),new ChatLine(1, "Please!"),new ChatLine(2, "Stop fighting! T_T"),new ChatLine(4, "That isn't making it any better!"),new ChatLine(5, "And Belief!"),new ChatLine(7, "You PROMISED you wouldn't swear anymore!")]),
+
     ]};
+
+    /*
+,new ChatLine(0, "test")
+        new iWantToBelieve(0, [new ChatLine(0, "test")]),
+        new uMad(0, [new ChatLine(0, "test")]),
+        new hatsuneMikuFan1997(0, [new ChatLine(0, "test")]),
+        new asinineAssasin(0, [new ChatLine(0, "test")]),
+,new ChatLine(0, "test")
+
+*/
 
     unknown = {video_src: "Films/Unknown.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
@@ -179,12 +192,4 @@ const postProcessStories = ()=>{
     }
 }
 
-/*
-,new ChatLine(0, "test")
-        new iWantToBelieve(0, [new ChatLine(0, "test")]),
-        new uMad(0, [new ChatLine(0, "test")]),
-        new hatsuneMikuFan1997(0, [new ChatLine(0, "test")]),
-        new asinineAssasin(0, [new ChatLine(0, "test")]),
-,new ChatLine(0, "test")
 
-*/
