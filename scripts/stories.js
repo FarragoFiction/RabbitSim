@@ -167,7 +167,7 @@ const east = {video_src: "Films/East.mp4",chat:[
         new asinineAssasin(167+10, [new ChatLine(0, "..."),new ChatLine(0, "What should I do, then?")]),
         new iWantToBelieve(171+10, [new ChatLine(0, "next time we're back in the part of the loop where mad is sane, we have to PAY ATTENTION"),new ChatLine(2, "what is he doing before?"),new ChatLine(3, "is it always the same point in time?")]),
         new hatsuneMikuFan1997(176+10, [new ChatLine(0, "But we can't do anything different back then -_-")]),
-        new iWantToBelieve(181+10, [new ChatLine(0, "no"),new ChatLine(1, "but we still are AWARE of the differences"),new ChatLine(2, "and sometimes they're new loops"),new ChatLine(3, "so we have to be prepared"),new ChatLine(4, "next time we're free"),new ChatLine(5, "we need to do something DIFFERENT")]),
+        new iWantToBelieve(181+10, [new ChatLine(0, "sure, we're stuck repeating the same chats"),new ChatLine(1, "but we still are AWARE of the differences"),new ChatLine(2, "and sometimes they're new loops"),new ChatLine(3, "so we have to be prepared"),new ChatLine(4, "next time we're free"),new ChatLine(5, "we need to do something DIFFERENT")]),
         new asinineAssasin(191+10, [new ChatLine(0, "I really don't see how this could possibly make a difference."),new ChatLine(1, "However..."),new ChatLine(2, "I do concede that it's better than lacking hope."),new ChatLine(3, "And if nothing else gives us something to talk about during the next fresh Loop.")]),
 
     ]};
