@@ -35,6 +35,7 @@ let video;
 
 let latestSeen = 0; //if the videos current time code is LESS than this, i need to throw away the whole chat and render up till what i've seen
 let latestInteracted = -10;
+window.alert("WARNING: FLASHING, SPOOKY IMAGES. SKULLS, SPIDERS, SNAKES, MANNEQUINES, THINGS THAT LOOK LIKE GORE. BE WARNED.")
 
 const getCurrentStory = () => {
     //console.log("JR NOTE: stories is", stories.length, "and times looped is ", timesLooped, "so i think thats index ",timesLooped %stories.length, "or is it",  )

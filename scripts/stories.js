@@ -91,7 +91,7 @@ const north = {video_src: "Films/North.mp4",chat: [
 
 const east = {video_src: "Films/East.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")]),
-        new uMad(3, [new ChatLine(0, "omg how is teh quality this shitty"),new ChatLine(2, "what even is this audio lulz")]),
+        new uMad(3, [new ChatLine(0, "what even is this audio lulz")]),
         new iWantToBelieve(10, [new ChatLine(0, "would you let me FINISH"),new ChatLine(2, "SO"),new ChatLine(4, "this is the only copy i could find of the stream")]),
         new hatsuneMikuFan1997(20, [new ChatLine(0, "Man when Parker-senpai snipes someone he really goes hard, huh?")]),
         new asinineAssasin(30, [new ChatLine(0, "Could we *please* not talk about two conspiracy theories at once? I have a big enough headache as it is...        ")]),
@@ -141,8 +141,8 @@ const east = {video_src: "Films/East.mp4",chat:[
 //mad uses image tags. that's markup.
 //thats enough
     south = {video_src: "Films/South.mp4",chat:[
-        new asinineAssasin(61, [new ChatLine(0, "Oh, look."),new ChatLine(1, "It's an actual train wreck."),new ChatLine(2, "How novel."),new ChatLine(3, "Belief, you take us to the nicest of places.")]),
-        new iWantToBelieve(63, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping video hell"),new ChatLine(6, "THEN")]),
+        new asinineAssasin(55, [new ChatLine(0, "Oh, look."),new ChatLine(1, "It's an actual train wreck."),new ChatLine(2, "How novel."),new ChatLine(3, "Belief, you take us to the nicest of places.")]),
+        new iWantToBelieve(61, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping video hell"),new ChatLine(6, "THEN")]),
         new iWantToBelieve(71, [new ChatLine(0, "its all"),new ChatLine(1, "'she failed to WARN us'"),new ChatLine(2, "BULLSHIT.")]),
 
         new hatsuneMikuFan1997(75, [new ChatLine(0, "Guys!"),new ChatLine(1, "Please!"),new ChatLine(2, "Stop fighting! T_T"),new ChatLine(4, "That isn't making it any better!"),new ChatLine(5, "And Belief!"),new ChatLine(7, "You PROMISED you wouldn't swear anymore!")]),
