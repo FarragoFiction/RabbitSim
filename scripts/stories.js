@@ -167,7 +167,7 @@ const postProcessStories = ()=>{
         fake.chat.push(new hatsuneMikuFan1997(i, [new ChatLine(0, pickFrom(friendlyPhrases))]))
     }*/
     for(let i = 0; i<300; i+=10){
-        console.log("JR NOTE: i is",i, "and stories[2 is", stories[2])
+        //console.log("JR NOTE: i is",i, "and stories[2 is", stories[2])
         stories[2].chat.push(new uMad(i, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]))
         stories[3].chat.push(new uMad(i, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]))
         stories[4].chat.push(new uMad(i, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]))

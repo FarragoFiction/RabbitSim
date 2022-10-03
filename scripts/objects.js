@@ -47,6 +47,22 @@ class ChatItem {
         this.lines = lines;
     }
 
+         //the video is currentlyTime, so we can assume it started playing videoTime seconds ago.
+        //so this message SHOULD have gone out 
+    calculatePastTime = (videoTime)=>{
+        videoTime = videoTime * 1000;
+        //console.log("JR NOTE: calculating past time videoTime is",videoTime)
+        const now = new Date().getTime();
+        //console.log("JR NOTE: now is", new Date(now).toLocaleTimeString());
+        const videoStart = new Date(now-videoTime).getTime();
+        //console.log("JR NOTE: videoStart is", new Date(videoStart).toLocaleTimeString());
+
+        const whenThisMessageWentOutInThePast = new Date(videoStart + this.targetTimecode*1000);
+        //console.log("JR NOTE: whenThisMessageWentOutInThePast is", whenThisMessageWentOutInThePast.toLocaleTimeString());
+
+        return whenThisMessageWentOutInThePast.toLocaleTimeString();
+    }
+
     renderSelf = (target, timecode) => {
         /*
         <div class="your chat">
@@ -71,7 +87,13 @@ class ChatItem {
         const name = createElementWithParentAndClass("div", header, "name");
         name.innerHTML = this.name;
         const timestamp = createElementWithParentAndClass("div", header, "timestamp");
-        timestamp.innerHTML = ` ${new Date().toLocaleTimeString()}`;
+        if( timecode >this.targetTimecode + 10){
+            timestamp.innerHTML = ` ${this.calculatePastTime(timecode)}`;//you went out in the past
+
+        }else{
+            timestamp.innerHTML = ` ${new Date().toLocaleTimeString()}`;//you went out now
+
+        }
         target.scrollTop = target.scrollHeight + 50;
         const content = createElementWithParentAndClass("div", container, "chat-content");
         for (let line of this.lines) {
