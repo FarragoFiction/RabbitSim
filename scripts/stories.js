@@ -142,10 +142,10 @@ const east = {video_src: "Films/East.mp4",chat:[
 //thats enough
     south = {video_src: "Films/South.mp4",chat:[
         new asinineAssasin(55, [new ChatLine(0, "Oh, look."),new ChatLine(1, "It's an actual train wreck."),new ChatLine(2, "How novel."),new ChatLine(3, "Belief, you take us to the nicest of places.")]),
-        new iWantToBelieve(61, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping video hell"),new ChatLine(6, "THEN")]),
-        new iWantToBelieve(71, [new ChatLine(0, "its all"),new ChatLine(1, "'she failed to WARN us'"),new ChatLine(2, "BULLSHIT.")]),
+        new iWantToBelieve(61, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping incorporeal video hell"),new ChatLine(6, "THEN"),new ChatLine(7, "its all"),new ChatLine(0, "'she failed to WARN us'")]),
+        new iWantToBelieve(71, [new ChatLine(1, "BULLSHIT.")]),
 
-        new hatsuneMikuFan1997(75, [new ChatLine(0, "Guys!"),new ChatLine(1, "Please!"),new ChatLine(2, "Stop fighting! T_T"),new ChatLine(4, "That isn't making it any better!"),new ChatLine(5, "And Belief!"),new ChatLine(7, "You PROMISED you wouldn't swear anymore!")]),
+        new hatsuneMikuFan1997(72, [new ChatLine(0, "Guys!"),new ChatLine(1, "Please!"),new ChatLine(2, "Stop fighting! T_T"),new ChatLine(4, "That isn't making it any better!"),new ChatLine(5, "And Belief!"),new ChatLine(7, "You PROMISED you wouldn't swear anymore!")]),
         new iWantToBelieve(82, [new ChatLine(0, "sorry...")]),
         new asinineAssasin(85, [new ChatLine(0, "My apologies.")]),
         new hatsuneMikuFan1997(91, [new ChatLine(0, "And enough out of YOU!"),new ChatLine(1, "Every ten seconds you"),new ChatLine(2, "You"),new ChatLine(3, "TROLL us!"),new ChatLine(4, "STOP!")]),

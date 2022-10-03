@@ -14,15 +14,16 @@ class ChatLine {
         if (immediate) {
             const p = createElementWithParentAndClass("p", target);
             p.innerHTML = this.content;
-            scrollTarget.scrollTop = scrollTarget.scrollHeight;
+            //scrollTarget.scrollTop = scrollTarget.scrollHeight;
             //beep.play();
         } else {
             setTimeout(() => {
                 const p = createElementWithParentAndClass("p", target);
                 p.innerHTML = this.content;
-                scrollTarget.scrollTop = scrollTarget.scrollHeight +50;
-                beep.play();
-
+                if(target.isConnected){ //if its been removed cuz the loop changed, don't bother
+                    scrollTarget.scrollTop = scrollTarget.scrollHeight +50;
+                    beep.play();
+                }
 
             }, this.offset * 1000)
 

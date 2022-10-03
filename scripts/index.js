@@ -79,11 +79,15 @@ const lookForNextEvent = (time) => {
 
 //time is wrong
 const reconcillePast = (time) => {
-    console.log("JR NOTE: reconcilling the past, loop was", timesLooped);
+   // console.log("JR NOTE: reconcilling the past, loop was", timesLooped);
     timesLooped ++;
-    console.log("JR NOTE: reconcilling the past, loop becomes", timesLooped);
+   // console.log("JR NOTE: reconcilling the past, loop becomes", timesLooped);
 
     const story = getCurrentStory();
+    //if we have zampanio spam at the end, distribute it
+    story.chat.sort((a,b) => a.targetTimecode - b.targetTimecode)
+
+    console.log("JR NOTE: reconcilling past, story is", story)
 
     const timeSave = video.currentTime;
     latestInteracted = timeSave;
