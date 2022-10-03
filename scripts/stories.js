@@ -183,8 +183,22 @@ const east = {video_src: "Films/East.mp4",chat:[
 */
 
     unknown = {video_src: "Films/Unknown.mp4",chat:[
-        new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
+        new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO"),new ChatLine(2, "i think i got it"),new ChatLine(4, "mad was the only one of us who posted an image"),new ChatLine(5, "not"),new ChatLine(7, "exactly sure where we're going to get one but"),new ChatLine(8, "that might be the key")]),
+        new hatsuneMikuFan1997(11, [new ChatLine(0, "Nooooo... T_T T_T T_T"),new ChatLine(1, "T_T T_T T_T"),new ChatLine(2, "T_T T_T T_T")]),
+        new iWantToBelieve(14, [new ChatLine(0, "miku!"),new ChatLine(5, "miku!"),new ChatLine(6, "calm down"),new ChatLine(7, "its okay"),new ChatLine(8, "remember?"),new ChatLine(0, "maybe that means AA got out")]),
+        new iWantToBelieve(21, [new ChatLine(0, "okay?")]),
+        new hatsuneMikuFan1997(22, [new ChatLine(0, "I wish i had eyes right now so I could cry >_<"),new ChatLine(1, "I hate this stupid chat hell!!")]),
+        new iWantToBelieve(24, [new ChatLine(0, "i know"),new ChatLine(1, "believe me i know"),new ChatLine(2, "we have to believe though"),new ChatLine(3, "believe mad and AA got out"),new ChatLine(4, "they're going for help right now")]),
+        new hatsuneMikuFan1997(31, [new ChatLine(0, "Okay..."),new ChatLine(1, "Okay"),new ChatLine(2, "I'll try...")]),
     ]};
+
+        /*
+,new ChatLine(0, "test")
+        new iWantToBelieve(0, [new ChatLine(0, "test")]),
+        new uMad(0, [new ChatLine(0, "test")]),
+        new hatsuneMikuFan1997(0, [new ChatLine(0, "test")]),
+        new asinineAssasin(0, [new ChatLine(0, "test")]),
+,new ChatLine(0, "test")
 
     west = {video_src: "Films/West.mp4",chat:[
         new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
