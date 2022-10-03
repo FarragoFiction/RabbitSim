@@ -189,20 +189,28 @@ const east = {video_src: "Films/East.mp4",chat:[
         new iWantToBelieve(21, [new ChatLine(0, "okay?")]),
         new hatsuneMikuFan1997(22, [new ChatLine(0, "I wish i had eyes right now so I could cry >_<"),new ChatLine(1, "I hate this stupid chat hell!!")]),
         new iWantToBelieve(24, [new ChatLine(0, "i know"),new ChatLine(1, "believe me i know"),new ChatLine(2, "we have to believe though"),new ChatLine(3, "believe mad and AA got out"),new ChatLine(4, "they're going for help right now")]),
-        new hatsuneMikuFan1997(31, [new ChatLine(0, "Okay..."),new ChatLine(1, "Okay"),new ChatLine(2, "I'll try...")]),
+        new hatsuneMikuFan1997(31, [new ChatLine(0, "Okay..."),new ChatLine(1, "Okay"),new ChatLine(2, "I'll try...")])
     ]};
 
-        /*
+
+let west_beat = 0;
+    west = {video_src: "Films/West.mp4",chat:[
+        new iWantToBelieve(west_beat, [new ChatLine(0, "no new theories from me"),new ChatLine(5, "miku, anything from you?")]),
+        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "right"),new ChatLine(1, "yeah"),new ChatLine(2, "okay"),new ChatLine(3, "this is fine"),new ChatLine(4, "i'm glad they got out"),new ChatLine(5, "if anything"),new ChatLine(6, "this is great"),new ChatLine(7, "so happy for them"),new ChatLine(8, "guess")]),
+        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "guess it'll be me next huh"),new ChatLine(1, "actually"),new ChatLine(2, "um."),new ChatLine(3, "what is on screen right now?"),new ChatLine(4, "what the hell?"),new ChatLine(5, "oh"),new ChatLine(6, "sorry miku"),new ChatLine(7, "forgot about the whole swearing thing"),new ChatLine(8, "no seriously")]),
+        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "thats US"),new ChatLine(1, "that's us watching"),new ChatLine(2, "we never watched that?"),new ChatLine(3, "what..."),new ChatLine(4, "look how happy we look"),new ChatLine(5, "oh"),new ChatLine(6, "huh"),new ChatLine(7, "i'm not in there am i"),new ChatLine(8, "just")]),
+        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "just everyone else"),new ChatLine(1, "watching a lil movie"),new ChatLine(2, "without"),new ChatLine(3, "me"),new ChatLine(4, "probably sending help as we speak"),new ChatLine(5, "haha"),new ChatLine(6, "yeah"),new ChatLine(7, "yeah"),new ChatLine(8, "once this loop ends")]),
+        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "i'll be free as a bird"),new ChatLine(1, "boy i've learned my lesson"),new ChatLine(2, "no more"),new ChatLine(3, "no more digging into things"),new ChatLine(4, "better left alone"),new ChatLine(5, "no sirree"),new ChatLine(6, "not for me"),new ChatLine(7, "'zampanio, what zampanio' <-- me, once i get out of here"),new ChatLine(8, "haha")]),
+        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "oh"),new ChatLine(1, "oh its ending"),new ChatLine(2, "well"),new ChatLine(3, "uh"),new ChatLine(4, "wish me luck")])
+    ]};
+
+            /*
 ,new ChatLine(0, "test")
         new iWantToBelieve(0, [new ChatLine(0, "test")]),
         new uMad(0, [new ChatLine(0, "test")]),
         new hatsuneMikuFan1997(0, [new ChatLine(0, "test")]),
         new asinineAssasin(0, [new ChatLine(0, "test")]),
-,new ChatLine(0, "test")
-
-    west = {video_src: "Films/West.mp4",chat:[
-        new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO")])
-    ]};
+,new ChatLine(0, "test")*/
 
    /* fake = {video_src: "Films/AllYourFriendsAreHappyWithoutYou.mp4",chat:[
         
