@@ -183,9 +183,9 @@ const east = {video_src: "Films/East.mp4",chat:[
 */
 
     unknown = {video_src: "Films/Unknown.mp4",chat:[
-        new iWantToBelieve(0, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO"),new ChatLine(2, "i think i got it"),new ChatLine(4, "mad was the only one of us who posted an image"),new ChatLine(5, "not"),new ChatLine(7, "exactly sure where we're going to get one but"),new ChatLine(8, "that might be the key")]),
+        new iWantToBelieve(1, [new ChatLine(0, "ok ok ok"),new ChatLine(1, "SO"),new ChatLine(2, "i think i got it"),new ChatLine(4, "mad was the only one of us who posted an image"),new ChatLine(5, "not"),new ChatLine(7, "exactly sure where we're going to get one but"),new ChatLine(8, "that might be the key")]),
         new hatsuneMikuFan1997(11, [new ChatLine(0, "Nooooo... T_T T_T T_T"),new ChatLine(1, "T_T T_T T_T"),new ChatLine(2, "T_T T_T T_T")]),
-        new iWantToBelieve(14, [new ChatLine(0, "miku!"),new ChatLine(5, "miku!"),new ChatLine(6, "calm down"),new ChatLine(7, "its okay"),new ChatLine(8, "remember?"),new ChatLine(0, "maybe that means AA got out")]),
+        new iWantToBelieve(14, [new ChatLine(0, "miku!"),new ChatLine(1, "miku!"),new ChatLine(2, "calm down"),new ChatLine(3, "its okay"),new ChatLine(4, "remember?"),new ChatLine(5, "maybe that means AA got out")]),
         new iWantToBelieve(21, [new ChatLine(0, "okay?")]),
         new hatsuneMikuFan1997(22, [new ChatLine(0, "I wish i had eyes right now so I could cry >_<"),new ChatLine(1, "I hate this stupid chat hell!!")]),
         new iWantToBelieve(24, [new ChatLine(0, "i know"),new ChatLine(1, "believe me i know"),new ChatLine(2, "we have to believe though"),new ChatLine(3, "believe mad and AA got out"),new ChatLine(4, "they're going for help right now")]),
@@ -193,7 +193,7 @@ const east = {video_src: "Films/East.mp4",chat:[
     ]};
 
 
-let west_beat = 0;
+let west_beat = 1;
     west = {video_src: "Films/West.mp4",chat:[
         new iWantToBelieve(west_beat, [new ChatLine(0, "no new theories from me"),new ChatLine(5, "miku, anything from you?")]),
         new iWantToBelieve(west_beat+=10, [new ChatLine(0, "right"),new ChatLine(1, "yeah"),new ChatLine(2, "okay"),new ChatLine(3, "this is fine"),new ChatLine(4, "i'm glad they got out"),new ChatLine(5, "if anything"),new ChatLine(6, "this is great"),new ChatLine(7, "so happy for them"),new ChatLine(8, "guess")]),
@@ -201,7 +201,7 @@ let west_beat = 0;
         new iWantToBelieve(west_beat+=10, [new ChatLine(0, "thats US"),new ChatLine(1, "that's us watching"),new ChatLine(2, "we never watched that?"),new ChatLine(3, "what..."),new ChatLine(4, "look how happy we look"),new ChatLine(5, "oh"),new ChatLine(6, "huh"),new ChatLine(7, "i'm not in there am i"),new ChatLine(8, "just")]),
         new iWantToBelieve(west_beat+=10, [new ChatLine(0, "just everyone else"),new ChatLine(1, "watching a lil movie"),new ChatLine(2, "without"),new ChatLine(3, "me"),new ChatLine(4, "probably sending help as we speak"),new ChatLine(5, "haha"),new ChatLine(6, "yeah"),new ChatLine(7, "yeah"),new ChatLine(8, "once this loop ends")]),
         new iWantToBelieve(west_beat+=10, [new ChatLine(0, "i'll be free as a bird"),new ChatLine(1, "boy i've learned my lesson"),new ChatLine(2, "no more"),new ChatLine(3, "no more digging into things"),new ChatLine(4, "better left alone"),new ChatLine(5, "no sirree"),new ChatLine(6, "not for me"),new ChatLine(7, "'zampanio, what zampanio' <-- me, once i get out of here"),new ChatLine(8, "haha")]),
-        new iWantToBelieve(west_beat+=10, [new ChatLine(0, "oh"),new ChatLine(1, "oh its ending"),new ChatLine(2, "well"),new ChatLine(3, "uh"),new ChatLine(4, "wish me luck")])
+        new iWantToBelieve(325, [new ChatLine(0, "oh"),new ChatLine(1, "oh its ending"),new ChatLine(2, "well"),new ChatLine(3, "uh"),new ChatLine(4, "wish me luck")])
     ]};
 
             /*
@@ -235,7 +235,7 @@ const postProcessStories = ()=>{
 
         fake.chat.push(new hatsuneMikuFan1997(i, [new ChatLine(0, pickFrom(friendlyPhrases))]))
     }*/
-    for(let i = 0; i<300; i+=10){
+    for(let i = 10; i<300; i+=10){
         //console.log("JR NOTE: i is",i, "and stories[2 is", stories[2])
         stories[2].chat.push(new uMad(i, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]))
         stories[3].chat.push(new uMad(i, [new ChatLine(0, "zampanio is a really fun game. you should play it.")]))

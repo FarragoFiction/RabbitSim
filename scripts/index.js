@@ -36,6 +36,7 @@ let video;
 let latestSeen = 0; //if the videos current time code is LESS than this, i need to throw away the whole chat and render up till what i've seen
 let latestInteracted = -10;
 window.alert("WARNING: FLASHING, SPOOKY IMAGES. SKULLS, SPIDERS, SNAKES, MANNEQUINES, THINGS THAT LOOK LIKE GORE. BE WARNED.")
+console.log("JR NOTE: Zampanio awaits.")
 
 const getCurrentStory = () => {
     //console.log("JR NOTE: stories is", stories.length, "and times looped is ", timesLooped, "so i think thats index ",timesLooped %stories.length, "or is it",  )
@@ -87,7 +88,7 @@ const reconcillePast = (time) => {
     //if we have zampanio spam at the end, distribute it
     story.chat.sort((a,b) => a.targetTimecode - b.targetTimecode)
 
-    console.log("JR NOTE: reconcilling past, story is", story)
+    //console.log("JR NOTE: reconcilling past, story is", story)
 
     const timeSave = video.currentTime;
     latestInteracted = timeSave;
