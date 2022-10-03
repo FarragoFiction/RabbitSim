@@ -131,10 +131,44 @@ const east = {video_src: "Films/East.mp4",chat:[
         new hatsuneMikuFan1997(330, [new ChatLine(0, "Does anyone else feel like we've done this before?")])
 ]}
 //theres clearly loops we don't see.  they reference events we never see.
+//also i wasn't going to have AA flat out use html in this loop but now that I HAVE had them do that
+//well, now i want an excuse for miku to
+//what a weird thing to be what shambles you
+//digging just a bit deeper
+//and seeing the truth
+//more than just words on a page
+//the code underneath
+//mad uses image tags. that's markup.
+//thats enough
     south = {video_src: "Films/South.mp4",chat:[
         new asinineAssasin(61, [new ChatLine(0, "Oh, look."),new ChatLine(1, "It's an actual train wreck."),new ChatLine(2, "How novel."),new ChatLine(3, "Belief, you take us to the nicest of places.")]),
-        new iWantToBelieve(63, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping video hell"),new ChatLine(6, "THEN"),new ChatLine(7, "its all"),new ChatLine(8, "'she failed to WARN us'"),new ChatLine(9, "BULLSHIT.")]),
-        new hatsuneMikuFan1997(72, [new ChatLine(0, "Guys!"),new ChatLine(1, "Please!"),new ChatLine(2, "Stop fighting! T_T"),new ChatLine(4, "That isn't making it any better!"),new ChatLine(5, "And Belief!"),new ChatLine(7, "You PROMISED you wouldn't swear anymore!")]),
+        new iWantToBelieve(63, [new ChatLine(0, "oh RIGHT"),new ChatLine(1, "because its my fault we're stuck here"),new ChatLine(2, "when i want to warn people about spooky videos its all "),new ChatLine(3, "'oh SHE'S unhinged, SHE believes in ALIENS'"),new ChatLine(4, "'oh don't listen to HER'"),new ChatLine(5, "but when we're ACTUALLY stuck in some kind of looping video hell"),new ChatLine(6, "THEN")]),
+        new iWantToBelieve(71, [new ChatLine(0, "its all"),new ChatLine(1, "'she failed to WARN us'"),new ChatLine(2, "BULLSHIT.")]),
+
+        new hatsuneMikuFan1997(75, [new ChatLine(0, "Guys!"),new ChatLine(1, "Please!"),new ChatLine(2, "Stop fighting! T_T"),new ChatLine(4, "That isn't making it any better!"),new ChatLine(5, "And Belief!"),new ChatLine(7, "You PROMISED you wouldn't swear anymore!")]),
+        new iWantToBelieve(82, [new ChatLine(0, "sorry...")]),
+        new asinineAssasin(85, [new ChatLine(0, "My apologies.")]),
+        new hatsuneMikuFan1997(91, [new ChatLine(0, "And enough out of YOU!"),new ChatLine(1, "Every ten seconds you"),new ChatLine(2, "You"),new ChatLine(3, "TROLL us!"),new ChatLine(4, "STOP!")]),
+        new iWantToBelieve(95, [new ChatLine(0, "miku..."),new ChatLine(1, "I really don't think that's mad anymore...")    ]),
+        new hatsuneMikuFan1997(101, [new ChatLine(0, "No!"),new ChatLine(0, "No! Okay?"),new ChatLine(0, "We are NOT being replaced with with with...")]),
+        new iWantToBelieve(102, [new ChatLine(0, "shambling husks of our former selves")]),
+        new hatsuneMikuFan1997(93+10, [new ChatLine(0, "THAT!"),new ChatLine(0, "That's not happening!")]),
+        new asinineAssasin(101+10, [new ChatLine(0, "As far as I can tell, the leading hypothesis are, in order of likelihood: <ol><li>One of us in a dream and the others are mere figments of their imagination.        </li><li> All of us are sharing a weird dream or otherwise scientific event together.        </li><li>A supernatural occurrence has caught us, but mad has escaped, leaving behind only a strange replica. (In this case we should try to replicate his actions to escape as well).        </li><li>A supernatural occurrence has caught us in some shallow way, but has caught mad in a deeper, more insidious way. (In this case we should try to avoid his actions to avoid falling further in).         </li></ol> "),new ChatLine(1, "Do I have that accurately?")]),
+        new iWantToBelieve(111+10, [new ChatLine(0, "yeah"),new ChatLine(1, "sure"),new ChatLine(2, "just invert the order and you're golden")]),
+        new hatsuneMikuFan1997(113+10, [new ChatLine(0, "I want to go home T_T")]),
+        new iWantToBelieve(121+10, [new ChatLine(0, "AA i have to admit, i'm impressed"),new ChatLine(1, "the fact that you STILL refuse to believe something spooky is going on"),new ChatLine(2, "despite the fact that you've ADMITTED you don't have a body anymore either"),new ChatLine(3, "10/10"),new ChatLine(4, "real big brain of you")]),
+        new asinineAssasin(127+10, [new ChatLine(0, "Do I then take it that all of your dreams make perfect sense? Fully embodied experience, hmm?")]),
+        new iWantToBelieve(131+10, [new ChatLine(0, "they sure as heck ain't THIS"),new ChatLine(1, "look"),new ChatLine(3, "stop treating me like some crackpot kook"),new ChatLine(5, "you've said it YOURSELF"),new ChatLine(7, "if its dreams"),new ChatLine(8, "all we can do is wait it out")]),
+        new iWantToBelieve(141+10, [new ChatLine(0, "if its NOT"),new ChatLine(2, "then we have a very important CHOICE to make"),new ChatLine(4, "do we try to follow in mad's footsteps?"),new ChatLine(6, "or try to find some other way out instead")]),
+        new asinineAssasin(151+10, [new ChatLine(0, "I refuse to entertain the thought."),new ChatLine(2, "Also, that is an atrocious pun. I refuse to 'go mad'.")]),
+        new hatsuneMikuFan1997(155+10, [new ChatLine(0, "What's the harm though?")]),
+        new asinineAssasin(158+10, [new ChatLine(0, "I beg your pardon?")]),
+        new hatsuneMikuFan1997(161+10, [new ChatLine(0, "If you're right, and it *is* a dream..."),new ChatLine(0, "Then no one will ever know you were being silly and believing in scary things."),new ChatLine(0, "If it's not..."),new ChatLine(0, "You might save all of our lives...")]),
+        new asinineAssasin(167+10, [new ChatLine(0, "..."),new ChatLine(0, "What should I do, then?")]),
+        new iWantToBelieve(171+10, [new ChatLine(0, "next time we're back in the part of the loop where mad is sane, we have to PAY ATTENTION"),new ChatLine(2, "what is he doing before?"),new ChatLine(3, "is it always the same point in time?")]),
+        new hatsuneMikuFan1997(176+10, [new ChatLine(0, "But we can't do anything different back then -_-")]),
+        new iWantToBelieve(181+10, [new ChatLine(0, "no"),new ChatLine(1, "but we still are AWARE of the differences"),new ChatLine(2, "and sometimes they're new loops"),new ChatLine(3, "so we have to be prepared"),new ChatLine(4, "next time we're free"),new ChatLine(5, "we need to do something DIFFERENT")]),
+        new asinineAssasin(191+10, [new ChatLine(0, "I really don't see how this could possibly make a difference."),new ChatLine(1, "However..."),new ChatLine(2, "I do concede that it's better than lacking hope."),new ChatLine(3, "And if nothing else gives us something to talk about during the next fresh Loop.")]),
 
     ]};
 
